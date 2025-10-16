@@ -41,7 +41,7 @@ export const getAllUsers = async () => {
  */
 export const updateUser = async (userId, data, token) => {
   try {
-    const response = await axios.put(`${API_URL}/${userId}`, data, {
+    const response = await axios.put(`${API_URL}/users/${userId}`, data, {
       headers: { Authorization: `Bearer ${token}` },
     });
     return response.data;
