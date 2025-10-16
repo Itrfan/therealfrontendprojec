@@ -26,6 +26,8 @@ import { useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import { toast } from "sonner";
 import Swal from "sweetalert2";
+import { API_URL } from "../utils/constants";
+
 
 import Header from "../components/Header";
 import { getPosts, deletePost } from "../utils/api_posts";

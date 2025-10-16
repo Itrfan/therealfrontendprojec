@@ -14,6 +14,8 @@ import { createPost } from "../utils/api_posts";
 import { getCategories } from "../utils/api_categories";
 import Header from "../components/Header";
 Header
+import { API_URL } from "../utils/constants";
+
 
 const NewPost = () => {
   const [title, setTitle] = useState("");

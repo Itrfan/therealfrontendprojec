@@ -19,6 +19,8 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useCookies } from "react-cookie";
 import { toast } from "sonner";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { API_URL } from "../utils/constants";
+
 import Header from "../components/Header";
 import { getPostById } from "../utils/api_posts";
 import { toggleLike } from "../utils/api_likes";

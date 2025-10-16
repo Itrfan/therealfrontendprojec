@@ -17,6 +17,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import FlagIcon from "@mui/icons-material/Flag";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { API_URL } from "../utils/constants";
+
 
 import Header from "../components/Header";
 import { getUserById, updateUser } from "../utils/api_users";
