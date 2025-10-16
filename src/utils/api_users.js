@@ -1,5 +1,4 @@
 import axios from "axios";
-
 import { API_URL } from "./constants";
 
 /**
@@ -11,7 +10,7 @@ export const getUserById = async (userId) => {
   if (!userId) throw new Error("User ID is required");
 
   try {
-    const response = await axios.get(`${API_URL}/${userId}`);
+    const response = await axios.get(`${API_URL}/users/${userId}`);
     return response.data;
   } catch (err) {
     console.error("Error fetching user:", err);
