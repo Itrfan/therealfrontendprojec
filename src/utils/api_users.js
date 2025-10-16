@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3000/api/users";
+import { API_URL } from "./constants";
 
 /**
  * Get user by ID
@@ -11,7 +11,7 @@ export const getUserById = async (userId) => {
   if (!userId) throw new Error("User ID is required");
 
   try {
-    const response = await axios.get(`${BASE_URL}/${userId}`);
+    const response = await axios.get(`${API_URL}/${userId}`);
     return response.data;
   } catch (err) {
     console.error("Error fetching user:", err);
@@ -25,7 +25,7 @@ export const getUserById = async (userId) => {
  */
 export const getAllUsers = async () => {
   try {
-    const response = await axios.get(BASE_URL);
+    const response = await axios.get(API_URL);
     return response.data;
   } catch (err) {
     console.error("Error fetching users:", err);
@@ -42,7 +42,7 @@ export const getAllUsers = async () => {
  */
 export const updateUser = async (userId, data, token) => {
   try {
-    const response = await axios.put(`${BASE_URL}/${userId}`, data, {
+    const response = await axios.put(`${API_URL}/${userId}`, data, {
       headers: { Authorization: `Bearer ${token}` },
     });
     return response.data;

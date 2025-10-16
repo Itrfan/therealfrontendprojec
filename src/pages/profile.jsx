@@ -174,7 +174,7 @@ const Profile = () => {
                         <Box
                           key={index}
                           component="img"
-                          src={`http://localhost:3000${img}`}
+                          src={`${API_URL}${img}`}
                           alt={`${post.title}-${index}`}
                           sx={{
                             width: "100%",
