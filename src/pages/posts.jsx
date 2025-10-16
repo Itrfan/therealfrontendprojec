@@ -453,7 +453,6 @@ const Posts = () => {
                       ))}
                     </Box>
                   )}
-
                   <Typography
                     variant="body2"
                     sx={{ mb: 1.5, color: "#4b2e1e" }}
